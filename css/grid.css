@@ -1,0 +1,104 @@
+        .container {
+            width: 1200px;
+            position: relative;
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .container:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        .container .row:before,
+        .row:after {
+            content: " ";
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+        
+        .container .row:after {
+            clear: both;
+        }
+        
+        h1,
+        h2 {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        
+        h3,
+        h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        
+        h5 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        
+        .container .wrap-col {
+            margin: 10px;
+        }
+        
+        .container .adjust-1 {
+            width: 33.33%;
+        }
+        
+        .container .adjust-2 {
+            width: 50%;
+        }
+        
+        .container .adjust-3 {
+            width: 25%;
+        }
+        
+        .content-box .item {
+            padding: 10px 0;
+        }
+        
+        .zoom {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100% !important;
+        }
+        
+        .content-box .item img {
+            display: block;
+            width: 100% !important;
+            height: auto;
+            transition: all 0.5s ease;
+        }
+        
+        .content-box .item .item-content {
+            background: #fff;
+            padding: 25px;
+            border: 1px solid #ddd;
+        }
+        
+        .content-box .item span {
+            font-size: 15px;
+            font-weight: 500px;
+            color: #000;
+            text-transform: uppercase;
+        }
+        
+        .content-box .item:hover .zoom img {
+            transform: scale(1.25) rotate(5deg);
+        }
+        
+        .container .adjust-1,
+        .container .adjust-2,
+        .container .adjust-3,
+        .container .adjust-4 {
+            float: left;
+            display: inline-block;
+        }
